@@ -15,4 +15,6 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
-
+vim.api.nvim_set_option('autoindent', true)
+vim.api.nvim_set_option('smartindent', true)
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])

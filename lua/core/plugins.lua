@@ -36,6 +36,18 @@ return require('packer').startup(function(use)
 
   use 'github/copilot.vim'
 
+  use 'glepnir/lspsaga.nvim'
+  
+  use {
+    'mrcjkb/rustaceanvim',
+    version = '^4', -- Recommended
+    ft = { 'rust' },
+  }
+
+  use 'simrat39/rust-tools.nvim'
+  use 'nvim-lua/plenary.nvim'
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
